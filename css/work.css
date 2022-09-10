@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #666666;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    font-feature-settings: "palt";
+}
+
+/* header */
+#header {
+    max-width: 975px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.pc_nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+.pc_nav li {
+    font-family: din-2014, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    width: 105px;
+    margin-right: 30px;
+}
+
+.pc_nav li:last-child {
+    margin-right: 0;
+}
+
+.pc_nav a {
+    display: block;
+}
+
+/* works */
+#works {
+    max-width: 975px;
+    margin: 95px auto 0;
+}
+
+h2 {
+    font-family: din-2014, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    border-bottom: solid 3px;
+    padding-bottom: 10px;
+    width: 5em;
+}
+
+.works_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.comingsoon {
+    background: #9D9D9D;
+    padding: 150px 180px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+
+.comingsoon p {
+    font-family: din-2014, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    color: #fff;
+}
+
+/* footer */
+.footer_wrap {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footer_wrap hr {
+    border: solid 1px #666666;
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+
+.toTop {
+    width: 6%;
+    margin: 85px auto;
+    text-align: center;
+}
+
+.footer_nav li {
+    font-family: din-2014, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: 0.2em;
+    padding-bottom: 30px;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.copy img {
+    width: 25px;
+}
+
+small {
+    font-family: din-2014, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+} 
+
+/* スマホ用メニューをPCでは消す */
+
+.sp_nav {
+    display: none;
+}
+
+.sp_btn {
+    display: none;
+}
