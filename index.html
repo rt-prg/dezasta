@@ -39,10 +39,15 @@
                 </ul>
             </nav>
         </div>
-        <div class="title">
-            <p class="Portfolio">PORTFOLIO</p>
-            <p class="name">rina takahashi</p>
-        </div>
+        <div class="sp_img">
+            <picture>
+                <source srcset="img/sp_back.svg" media="(max-width:767px)">
+                <img src="img/header.png" alt="背景">
+            </picture>
+            <div class="title">
+                <p class="Portfolio">PORTFOLIO</p>
+                <p class="name">rina takahashi</p>
+            </div>
     </header>
 
     <section id="about">
@@ -109,44 +114,42 @@
 
     <section id="contact">
         <h2 class="topics">Contact</h2>
-        <div class="lead-form">
-            <h3>お問い合わせはこちら</h3>
-            <p>お仕事のご依頼はもちろん、<br>こんなこと一緒にできるかな？といったご相談も<br>
-                無料で承ります。お気軽にご相談ください。</p>
-        </div>
-
         <div class="form_wrap">
-            <p>以下のフォームに必要事項をご入力いただき、<br>送信ボタンを押してください。 ( ＊マークは必須項目です。)</p>
-            <form action="" method="post">
-                <div class="item">
-                    <label class="label"><span class="label-required">*</span>お名前</label>
-                    <input class="inputs" type="text" name="name">
-                </div>
-
-                <div class="item">
-                    <label class="label"><span class="label-required">*</span>フリガナ</label>
-                    <input class="inputs" type="text" name="name">
-                </div>
-
-                <div class="item">
-                    <label class="label"><span class="label-required">*</span>メールアドレス</label>
-                    <input class="inputs" type="email" name="email">
-                </div>
-
-                <div class="item">
-                    <label class="label">電話番号</label>
-                    <input class="inputs" type="tel" name="tel">
-                </div>
-
-                <div class="item">
-                    <label class="label"><span class="label-required">※</span>お問い合わせ内容</label>
-                    <textarea class="inputs"></textarea>
-                </div>
-
-                <div class="btn">
-                    <button type="submit">送信する</button>
-                </div>
-            </form>
+            <div class="form_p">
+                <h3>お問い合わせはこちら</h3>
+                <p>お仕事のご依頼はもちろん、<br>こんなこと一緒にできるかな？といったご相談も<br>
+                    無料で承ります。お気軽にご相談ください。</p>
+            </div>
+            <div class="form_lead">
+                <p>以下のフォームに必要事項をご入力いただき、<br>送信ボタンを押してください。 ( ＊マークは必須項目です。)</p>
+                <form id="Form"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0MHM3EErm5aSPbkC6GVisbzjn87Rc-uMfT5pagua1xFaBWw/formResponse"
+                    method="post">
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">*</span>お名前</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）山田太郎" name="entry.2005620554">
+                    </div>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">*</span>フリガナ</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）ヤマダタロウ" name="entry.831787154">
+                    </div>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">*</span>メールアドレス</p>
+                        <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com"
+                            name="entry.1045781291">
+                    </div>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required"></span>電話番号</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000"
+                            name="entry.1166974658">
+                    </div>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">*</span>お問い合わせ内容</p>
+                        <textarea class="Form-Item-Textarea" name="entry.839337160"></textarea>
+                    </div>
+                    <input type="submit" class="submit" value="送信する">
+            </div>
+        </div>
         </div>
     </section>
 
@@ -201,7 +204,13 @@
                     }
                 }]
             });
+
+            $('.form_wrap h3').click(function () {
+                $('.form_lead').slideToggle();
+            });
         });
+
+
 
         window.onload = function () {
             fade_effect();

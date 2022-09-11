@@ -9,15 +9,21 @@
     <meta name="description" content="rina takahashiのPortfolioです。">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://use.typekit.net/gmz4ewr.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gmz4ewr.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
     <header id="header">
         <nav class="pc_nav">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><a href="file:///Users/rina/Desktop/dezasta/about.html#header">About</a></li>
+                <li><a href="file:///Users/rina/Desktop/dezasta/index.html#service">Service</a></li>
+                <li><a href="file:///Users/rina/Desktop/dezasta/work.html">Works</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -67,37 +73,37 @@
 
     <section id="history">
         <h2>History</h2>
-        <dl>
-            <dt>1991年</dt>
-            <dd>
+        <dl class="history_wrap">
+            <dt class="year">1991年</dt>
+            <dd class="topics">
                 神奈川県に生まれる
             </dd>
-            <dt>1999年</dt>
-            <dd>
+            <dt class="year">1999年</dt>
+            <dd class="topics">
                 小学校2年生の時にその後15年間<br>
                 続けることになるバスケットボールに出会う
             </dd>
-            <dt>2010年</dt>
-            <dd>
+            <dt class="year">2010年</dt>
+            <dd class="topics">
                 関東を飛び出し奈良県の大学に進学<br>
                 部活とバイトに明け暮れる
             </dd>
-            <dt>2014年</dt>
-            <dd>
+            <dt class="year">2014年</dt>
+            <dd class="topics">
                 外資系化粧品企業に約6年勤務<br>
                 マネジメント業務を主に担当
             </dd>
-            <dt>2020年</dt>
-            <dd>
+            <dt class="year">2020年</dt>
+            <dd class="topics">
                 結婚を機に退職、1年ほど<br>
                 カスタマーサポートの仕事に従事
             </dd>
-            <dt>2021年</dt>
-            <dd>
+            <dt class="year">2021年</dt>
+            <dd class="topics">
                 職業訓練校にてWEBデザインを学ぶ
             </dd>
-            <dt>2022年</dt>
-            <dd>
+            <dt class="year">2022年</dt>
+            <dd class="topics">
                 商業施設で広報・PRのお仕事をしながら<br>
                 オンラインスクールへ通い、WEBデザインを<br>
                 再度勉強し直す
@@ -121,6 +127,45 @@
             ・柔らかくシンプルなデザインが得意です</p>
     </section>
 
+    <section id="contact">
+        <div class="form_wrap">
+            <div class="form_p">
+                <h3>お問い合わせはこちら</h3>
+                <p>お仕事のご依頼はもちろん、<br>こんなこと一緒にできるかな？といったご相談も<br>
+                    無料で承ります。お気軽にご相談ください。</p>
+            </div>
+            <div class="form_lead">
+                <p>以下のフォームに必要事項をご入力いただき、<br>送信ボタンを押してください。 ( ＊マークは必須項目です。)</p>
+                <form id="Form"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0MHM3EErm5aSPbkC6GVisbzjn87Rc-uMfT5pagua1xFaBWw/formResponse"
+                    method="post">
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">*</span>お名前</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）山田太郎" name="entry.2005620554">
+                    </div>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">*</span>フリガナ</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）ヤマダタロウ" name="entry.831787154">
+                    </div>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">*</span>メールアドレス</p>
+                        <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com"
+                            name="entry.1045781291">
+                    </div>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label"><span class="Form-Item-Label-Required"></span>電話番号</p>
+                        <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000"
+                            name="entry.1166974658">
+                    </div>
+                    <div class="Form-Item">
+                        <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">*</span>お問い合わせ内容</p>
+                        <textarea class="Form-Item-Textarea" name="entry.839337160"></textarea>
+                    </div>
+                    <input type="submit" class="submit" value="送信する">
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer_wrap">
             <div class="toTop"><a href="#header"><img src="img/totop.svg" alt="トップへ戻る"></a>
@@ -138,6 +183,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $(function () {
+            $('.sp_btn,.sp_nav li').click(function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+
+            $('.form_wrap h3').click(function () {
+                $('.form_lead').slideToggle();
+            });
+        });
+    </script>
 </body>
 
 </html>
