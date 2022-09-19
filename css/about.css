@@ -354,11 +354,6 @@ dd.topics {
     margin-right: auto;
     max-width: 720px;
   }
-  @media screen and (max-width: 480px) {
-    .Form {
-      margin-top: 40px;
-    }
-  }
 
   .Form-Item {
     padding-top: 24px;
@@ -366,16 +361,6 @@ dd.topics {
     width: 100%;
     display: flex;
     align-items: left;
-  }
-
-  @media screen and (max-width: 480px) {
-    .Form-Item {
-      padding-left: 14px;
-      padding-right: 14px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      flex-wrap: wrap;
-    }
   }
 
   .Form-Item p {
@@ -390,34 +375,18 @@ dd.topics {
     font-size: 18px;
   }
 
-  @media screen and (max-width: 480px) {
-    .Form-Item-Label {
-      max-width: inherit;
-      display: flex;
-      align-items: center;
-      font-size: 15px;
-    }
-  }
   .Form-Item-Label.isMsg {
     margin-top: 8px;
     margin-bottom: auto;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Label.isMsg {
-      margin-top: 0;
-    }
-  }
+
   .Form-Item-Label-Required {
     display: inline-block;
     text-align: left;
     color: red;
     font-size: 14px;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Label-Required {
-      font-size: 10px;
-    }
-  }
+
   .Form-Item-Input {
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -431,15 +400,7 @@ dd.topics {
     background: #eaedf2;
     font-size: 18px;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Input {
-      margin-left: 0;
-      margin-top: 18px;
-      height: 40px;
-      flex: inherit;
-      font-size: 15px;
-    }
-  }
+ 
   .Form-Item-Textarea {
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -453,15 +414,7 @@ dd.topics {
     background: #eaedf2;
     font-size: 18px;
   }
-  @media screen and (max-width: 480px) {
-    .Form-Item-Textarea {
-      margin-top: 18px;
-      margin-left: 0;
-      height: 200px;
-      flex: inherit;
-      font-size: 15px;
-    }
-  }
+ 
   .submit {
     border: none;
     border-radius: 30px;
@@ -477,15 +430,6 @@ dd.topics {
     color: #fff;
     font-weight: bold;
     font-size: 20px;
-  }
-  @media screen and (max-width: 480px) {
-    .submit {
-      margin-top: 24px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      width: 160px;
-      font-size: 16px;
-    }
   }
 
 /* footer */
@@ -543,4 +487,294 @@ small {
 
 .sp_btn {
     display: none;
+}
+
+@media screen and (max-width: 375px) {
+
+    /* ハンバーガーメニュー */
+    .pc_nav {
+        display: none;
+    }
+    
+    .sp_btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 22px;
+        height: 30px;
+        z-index: 100;
+    }
+    
+    .sp_btn span {
+        background: #666666;
+        display: block;
+        width: 33px;
+        height: 3px;
+        position: relative;
+        top: 10px;
+    }
+    
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: '';
+        background: #666666;
+        display: block;
+        width: 33px;
+        height: 3px;
+        position: absolute;
+        transition: 0.3s;
+    
+    }
+    
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    
+    .sp_btn span::after {
+        top: 10px;
+    }
+    
+    /* OPEN時 */
+    .open span {
+        background: transparent;
+    }
+    
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+    
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+    
+    .sp_nav {
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.8);
+    }
+    
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .sp_nav ul li {
+        padding: 20px 0;
+        color: #fff;
+        font-size: 20px;
+        font-family: din-2014, sans-serif;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+
+    /* about */
+    #about h2 {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        font-size: 24px;
+        width: 4em;
+    }
+
+    .about_wrap {
+        margin-top: 50px; 
+    } 
+
+    .profile_wrap {
+        margin-top: 270px;
+        margin-left: 30px;
+    }
+
+    .name {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .title {
+        font-size: 11px;
+    }
+    
+    .profile_txt p {
+        font-size: 9px;
+        line-height: 2;
+    }
+
+    .about_wrap img {
+        width: 196px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    /* main */
+    #main {
+        margin-top: 50px;
+    }
+
+    .lead p {
+        font-size: 2.1vw;
+    }
+
+    /* history */
+    #history {
+        max-width: 975px;
+        margin: 100px auto 0;
+    }
+
+    dl.history_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 0 80px;
+    }
+
+    dt.year {
+        font-size: 9px;
+    }
+
+    dd.topics {
+        font-size: 9px;
+    }
+
+    /* skill */
+    .skill_lead {
+        font-size: 0.5vw;
+    }
+
+    .graph {
+        display: block;
+    }
+
+    .graph img {
+        width: 30%;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .skill_item {
+        font-size: 0.2vw;
+        margin-top: 20px;
+    }
+
+    
+    /* contact */
+#contact {
+    padding-top: 100px;
+  }
+  
+  #Form {
+    margin-top: 40px;
+  }
+  
+  .form_wrap {
+    margin: 80px auto 0;
+    padding:30px;
+  }
+  
+  .form_wrap p {
+    margin-bottom: 0px;
+  }
+  
+  .form_p h3 {
+    font-size: 18px;
+    width: 70%;
+    padding: 20px 30px;
+  }
+  
+  .form_p p {
+    font-size: 11px;
+  }
+  
+  .form_lead {
+    margin-top: 50px;
+  }
+  
+  .form_lead p {
+    font-size: 11px;
+  }
+  
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .Form-Item p {
+    font-size: 15px;
+  }
+  
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 5px;
+  }
+  
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+  
+  .Form-Item-Label-Required {
+    font-size: 10px;
+  }
+  
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+    width: 80%;
+  }
+  
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+    width: 80%;
+  }
+  
+  .submit {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+  
+    
+    /* footer */
+    .footer_nav li {
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+  
+    .footer_wrap hr {
+        margin-bottom: 20px;
+    }
+    
+    .toTop {
+        width: 10%;
+        margin: 50px auto 30px;
+    }
+  
+    .copy {
+        align-items: center;
+    }
+  
+    small {
+        font-size: 1px;
+        align-items: center;
+    }
 }
