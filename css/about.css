@@ -489,7 +489,7 @@ small {
     display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
 
     /* ハンバーガーメニュー */
     .pc_nav {
@@ -578,7 +578,7 @@ small {
     #about h2 {
         position: absolute;
         top: 100px;
-        left: 30px;
+        left: 40px;
         font-size: 24px;
         width: 4em;
     }
@@ -589,20 +589,20 @@ small {
 
     .profile_wrap {
         margin-top: 270px;
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     .name {
-        font-size: 16px;
+        font-size: 20px;
         padding-bottom: 10px;
     }
 
     .title {
-        font-size: 11px;
+        font-size: 14px;
     }
     
     .profile_txt p {
-        font-size: 9px;
+        font-size: 12px;
         line-height: 2;
     }
 
@@ -611,6 +611,7 @@ small {
         position: absolute;
         top: 0;
         right: 0;
+        left: auto;
     }
 
     /* main */
@@ -619,12 +620,14 @@ small {
     }
 
     .lead p {
-        font-size: 2.1vw;
+        width: 100%;
+        font-size: 3vw;
     }
 
     /* history */
     #history {
         max-width: 975px;
+        width: 80%;
         margin: 100px auto 0;
     }
 
@@ -636,16 +639,20 @@ small {
     }
 
     dt.year {
-        font-size: 9px;
+        font-size: 2vw;
     }
 
     dd.topics {
-        font-size: 9px;
+        font-size: 1.8vw;
+    }
+
+    dl dt::after {
+        font-size: 2.86vw;
     }
 
     /* skill */
     .skill_lead {
-        font-size: 0.5vw;
+        font-size: 1.5vw;
     }
 
     .graph {
@@ -659,14 +666,14 @@ small {
     }
 
     .skill_item {
-        font-size: 0.2vw;
+        font-size: 1.2vw;
         margin-top: 20px;
     }
 
     
     /* contact */
 #contact {
-    padding-top: 100px;
+    padding-top: 60px;
   }
   
   #Form {
@@ -674,7 +681,7 @@ small {
   }
   
   .form_wrap {
-    margin: 80px auto 0;
+    margin: 0 auto;
     padding:30px;
   }
   
@@ -755,6 +762,12 @@ small {
   
     
     /* footer */
+    .footer_wrap {
+        width: auto;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
     .footer_nav li {
         font-size: 13px;
         padding-bottom: 20px;
@@ -765,7 +778,7 @@ small {
     }
     
     .toTop {
-        width: 10%;
+        width: 15%;
         margin: 50px auto 30px;
     }
   
@@ -774,7 +787,7 @@ small {
     }
   
     small {
-        font-size: 1px;
+        font-size: 10px;
         align-items: center;
     }
 }

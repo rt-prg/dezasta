@@ -101,7 +101,7 @@ h2 {
     letter-spacing: 0.2em;
     border-bottom: solid 3px;
     padding-bottom: 10px;
-    width: 5em;
+    width: 4.5em;
 }
 
 .works_wrap {
@@ -132,6 +132,17 @@ h2 {
     max-width: 975px;
     padding: 160px 10px 0;
     margin: 0 auto;
+}
+
+.topics {
+    font-family: din-2014, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    border-bottom: solid 3px;
+    padding-bottom: 10px;
+    width: 5.5em;
 }
 
 .form_wrap {
@@ -324,7 +335,7 @@ small {
     display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
 
     /* ハンバーガーメニュー */
     .pc_nav {
@@ -414,9 +425,10 @@ small {
         margin: 50px auto 0;
      }
 
-     #works h2 {
+     h2 {
          font-size: 18px;
          margin-left: 20px;
+         padding-bottom: 5px;
          width: 4.5em;
      }
 
@@ -436,32 +448,20 @@ small {
         padding-top: 100px;
     }
 
-    #contact h2 {
-            font-size: 18px;
-            font-family: din-2014, sans-serif;
-            font-weight: 600;
-            font-style: normal;
-            letter-spacing: 0.2em;
+    .topics {
+        font-size: 18px;
+        margin-left: 20px;
+        padding-bottom: 5px;
+        text-align: left;
+        width: 5.5em;
     }
-
-    #contact h2:before {
-        border-top: 3px solid;
-        content: "";
-        width: 6em; /* 線の長さ */
-        border-radius: 30px;
-        margin-right: 20px;
-      }
-    
-      #contact h2:after {
-        margin-left: 1em; /* 文字の左隣 */
-      }
   
     #Form {
         margin-top: 40px;
     }
   
     .form_wrap {
-        margin: 80px auto 0;
+        margin: 30px auto 0;
         padding:30px;
     }
   
@@ -541,6 +541,12 @@ small {
     }
     
     /* footer */
+    .footer_wrap {
+        width: auto;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
     .footer_nav li {
         font-size: 13px;
         padding-bottom: 20px;
@@ -551,7 +557,7 @@ small {
     }
     
     .toTop {
-        width: 10%;
+        width: 15%;
         margin: 50px auto 30px;
     }
   
@@ -560,7 +566,7 @@ small {
     }
   
     small {
-        font-size: 1px;
+        font-size: 10px;
         align-items: center;
     }
 }
