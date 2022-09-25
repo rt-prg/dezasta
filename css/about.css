@@ -80,6 +80,10 @@ body {
     margin-right: 30px;
 }
 
+.pc_nav li:first-child {
+    margin-right: 0;
+}
+
 .pc_nav li:last-child {
     margin-right: 0;
 }
@@ -94,7 +98,7 @@ body {
     margin: 0 auto;
 }
 
-#about h2 {
+#about h1 {
     font-family: din-2014, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -157,12 +161,12 @@ body {
 
 #main img {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     vertical-align: bottom;
 }
     
 .lead p {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 0.1em;
     line-height: 2.2;
@@ -223,7 +227,7 @@ dl dt::after {
     color: #ccc;
 }
  
-dd.topics {
+dd.topics_pc {
     font-weight: 600;
     font-style: normal;
     font-size: 16px;
@@ -234,6 +238,10 @@ dd.topics {
     padding: 0.2em 2.0em 3.0em;
     border-left: 2px solid #ccc;
     box-sizing: border-box;
+}
+
+dd.topics_sp {
+    display: none;
 }
 
 /* skill */
@@ -257,16 +265,20 @@ dd.topics {
 .skill_lead {
     margin: 45px 0 40px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0.1em;
     line-height: 1.95;
     text-align: center;
 }
 
+.skill_lead_sp {
+    display: none;
+}
+
 .skill_item {
     margin-top: 40px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0.1em;
     line-height: 2.38;
     text-align: center;
@@ -296,7 +308,7 @@ dd.topics {
 /* Contact */
 #contact {
     max-width: 975px;
-    padding: 160px 10px 0;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -326,9 +338,13 @@ dd.topics {
     margin-bottom: 50px;
 }
 
-.form_p p {
+.form p {
     text-align: center;
 } 
+
+.form_p_sp {
+    display: none;
+}
 
 .form_p h3:hover {
     background-color: #4D4D4D;
@@ -339,14 +355,21 @@ dd.topics {
     cursor: pointer;
 }
 
-.form_lead {
+.form_lead_pc {
     max-width: 975px;
+}
+
+.form_lead_pc p {
+    text-align: center;
+}
+
+.form_lead_sp {
     display: none;
 }
 
-.form_lead p {
-    text-align: center;
-}
+.form_lead span {
+    color: red;
+} 
 
 #Form {
     margin-top: 80px;
@@ -575,7 +598,7 @@ small {
     }
 
     /* about */
-    #about h2 {
+    #about h1 {
         position: absolute;
         top: 100px;
         left: 40px;
@@ -600,6 +623,10 @@ small {
     .title {
         font-size: 14px;
     }
+
+    .profile_txt {
+        margin-top: 20px;
+    }
     
     .profile_txt p {
         font-size: 12px;
@@ -619,15 +646,19 @@ small {
         margin-top: 50px;
     }
 
+    #main img {
+        width: 90%;
+    }
+
     .lead p {
         width: 100%;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     /* history */
     #history {
         max-width: 975px;
-        width: 80%;
+        width: 92%;
         margin: 100px auto 0;
     }
 
@@ -639,20 +670,46 @@ small {
     }
 
     dt.year {
-        font-size: 2vw;
-    }
-
-    dd.topics {
-        font-size: 1.8vw;
+        font-size: 13px;
+        padding: 0.5em 2em 0.5em 0.5em;
     }
 
     dl dt::after {
-        font-size: 2.86vw;
+        font-size: 13px;
+        right: -0.65em;
+    }
+
+    dd.topics_sp {
+        display: block;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        line-height: 1.4;
+        text-align: left;
+        width: calc(100% - 8.5em);
+        padding: 0.2em 1em 3.0em;
+        border-left: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    dd.topics_pc {
+        display: none;
     }
 
     /* skill */
     .skill_lead {
-        font-size: 1.5vw;
+        display: none;
+    }
+
+    .skill_lead_sp {
+        display: block;
+        margin: 45px 0 40px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 1.95;
+        text-align: center;
     }
 
     .graph {
@@ -666,7 +723,7 @@ small {
     }
 
     .skill_item {
-        font-size: 1.2vw;
+        font-size: 12px;
         margin-top: 20px;
     }
 
@@ -689,22 +746,29 @@ small {
     margin-bottom: 0px;
   }
   
-  .form_p h3 {
+  .form h3 {
     font-size: 18px;
     width: 70%;
     padding: 20px 30px;
   }
   
-  .form_p p {
-    font-size: 11px;
+  .form_p {
+    display: none;
+  }
+
+  .form .form_p_sp {
+      display: block;
+      font-size: 16px;
   }
   
-  .form_lead {
+  .form_lead .form_lead_pc {
+    display: none;
+}
+
+  .form_lead .form_lead_sp {
+      display: block;
     margin-top: 50px;
-  }
-  
-  .form_lead p {
-    font-size: 11px;
+    font-size: 16px;
   }
   
   .Form-Item {
@@ -716,7 +780,7 @@ small {
   }
   
   .Form-Item p {
-    font-size: 15px;
+    font-size: 16px;
   }
   
   .Form-Item-Label {
@@ -731,7 +795,7 @@ small {
   }
   
   .Form-Item-Label-Required {
-    font-size: 10px;
+    font-size: 16px;
   }
   
   .Form-Item-Input {
@@ -787,7 +851,7 @@ small {
     }
   
     small {
-        font-size: 10px;
+        font-size: 12px;
         align-items: center;
     }
 }

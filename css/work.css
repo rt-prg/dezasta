@@ -79,6 +79,10 @@ body {
     margin-right: 30px;
 }
 
+.pc_nav li:first-child {
+    margin-right: 0;
+}
+
 .pc_nav li:last-child {
     margin-right: 0;
 }
@@ -93,7 +97,7 @@ body {
     margin: 95px auto 0;
 }
 
-h2 {
+h1 {
     font-family: din-2014, sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -130,19 +134,8 @@ h2 {
 /* Contact */
 #contact {
     max-width: 975px;
-    padding: 160px 10px 0;
+    padding: 0 10px;
     margin: 0 auto;
-}
-
-.topics {
-    font-family: din-2014, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    letter-spacing: 0.2em;
-    border-bottom: solid 3px;
-    padding-bottom: 10px;
-    width: 5.5em;
 }
 
 .form_wrap {
@@ -171,9 +164,13 @@ h2 {
     margin-bottom: 50px;
 }
 
-.form_p p {
+.form p {
     text-align: center;
 } 
+
+.form_p_sp {
+    display: none;
+}
 
 .form_p h3:hover {
     background-color: #4D4D4D;
@@ -184,14 +181,21 @@ h2 {
     cursor: pointer;
 }
 
-.form_lead {
+.form_lead_pc {
     max-width: 975px;
+}
+
+.form_lead_pc p {
+    text-align: center;
+}
+
+.form_lead_sp {
     display: none;
 }
 
-.form_lead p {
-    text-align: center;
-}
+.form_lead span {
+    color: red;
+} 
 
 #Form {
     margin-top: 80px;
@@ -245,7 +249,7 @@ h2 {
     background: #eaedf2;
     font-size: 18px;
   }
-
+ 
   .Form-Item-Textarea {
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -259,7 +263,7 @@ h2 {
     background: #eaedf2;
     font-size: 18px;
   }
-
+ 
   .submit {
     border: none;
     border-radius: 30px;
@@ -277,7 +281,7 @@ h2 {
     font-size: 20px;
   }
 
-  /* footer */
+/* footer */
 .footer_wrap {
     width: 85%;
     margin: 0 auto;
@@ -425,7 +429,7 @@ small {
         margin: 50px auto 0;
      }
 
-     h2 {
+     h1 {
          font-size: 18px;
          margin-left: 20px;
          padding-bottom: 5px;
