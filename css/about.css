@@ -308,8 +308,19 @@ dd.topics_sp {
 /* Contact */
 #contact {
     max-width: 975px;
-    padding: 0 10px;
+    padding: 160px 10px 0;
     margin: 0 auto;
+}
+
+#contact h2 {
+    font-family: din-2014, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    border-bottom: solid 3px;
+    padding-bottom: 10px;
+    width: 5.5em;
 }
 
 .form_wrap {
@@ -338,11 +349,11 @@ dd.topics_sp {
     margin-bottom: 50px;
 }
 
-.form p {
+.form_p p {
     text-align: center;
 } 
 
-.form_p_sp {
+.form_p .form_p_sp {
     display: none;
 }
 
@@ -355,11 +366,12 @@ dd.topics_sp {
     cursor: pointer;
 }
 
-.form_lead_pc {
+.form_lead {
     max-width: 975px;
+    display: none;
 }
 
-.form_lead_pc p {
+.form_lead p {
     text-align: center;
 }
 
@@ -369,7 +381,7 @@ dd.topics_sp {
 
 .form_lead span {
     color: red;
-} 
+}
 
 #Form {
     margin-top: 80px;
@@ -732,6 +744,14 @@ small {
 #contact {
     padding-top: 60px;
   }
+
+  #contact h2 {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    width: 5.5em;
+   }
   
   #Form {
     margin-top: 40px;
@@ -746,17 +766,17 @@ small {
     margin-bottom: 0px;
   }
   
-  .form h3 {
+  .form_p h3 {
     font-size: 18px;
     width: 70%;
     padding: 20px 30px;
   }
-  
-  .form_p {
-    display: none;
+
+  .form_p .form_p_pc {
+      display: none;
   }
 
-  .form .form_p_sp {
+  .form_p .form_p_sp {
       display: block;
       font-size: 16px;
   }
@@ -770,6 +790,7 @@ small {
     margin-top: 50px;
     font-size: 16px;
   }
+  
   
   .Form-Item {
     padding-left: 14px;

@@ -134,8 +134,19 @@ h1 {
 /* Contact */
 #contact {
     max-width: 975px;
-    padding: 0 10px;
+    padding: 160px 10px 0;
     margin: 0 auto;
+}
+
+#contact h2 {
+    font-family: din-2014, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+    border-bottom: solid 3px;
+    padding-bottom: 10px;
+    width: 5.5em;
 }
 
 .form_wrap {
@@ -164,7 +175,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-.form p {
+.form_p p {
     text-align: center;
 } 
 
@@ -181,11 +192,12 @@ h1 {
     cursor: pointer;
 }
 
-.form_lead_pc {
+.form_lead {
     max-width: 975px;
+    display: none;
 }
 
-.form_lead_pc p {
+.form_lead p {
     text-align: center;
 }
 
@@ -195,7 +207,7 @@ h1 {
 
 .form_lead span {
     color: red;
-} 
+}
 
 #Form {
     margin-top: 80px;
@@ -249,7 +261,7 @@ h1 {
     background: #eaedf2;
     font-size: 18px;
   }
- 
+
   .Form-Item-Textarea {
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -263,7 +275,7 @@ h1 {
     background: #eaedf2;
     font-size: 18px;
   }
- 
+
   .submit {
     border: none;
     border-radius: 30px;
@@ -281,7 +293,7 @@ h1 {
     font-size: 20px;
   }
 
-/* footer */
+  /* footer */
 .footer_wrap {
     width: 85%;
     margin: 0 auto;
@@ -449,128 +461,137 @@ small {
     
     /* contact */
     #contact {
-        padding-top: 100px;
-    }
+        padding-top: 60px;
+      }
+      
+     #contact h2 {
+         font-size: 18px;
+         margin-left: 20px;
+         margin-bottom: 20px;
+         padding-bottom: 5px;
+         width: 5.5em;
+        }
 
-    .topics {
-        font-size: 18px;
-        margin-left: 20px;
-        padding-bottom: 5px;
-        text-align: left;
-        width: 5.5em;
-    }
-  
-    #Form {
+      #Form {
         margin-top: 40px;
-    }
-  
-    .form_wrap {
-        margin: 30px auto 0;
+      }
+      
+      .form_wrap {
+        margin: 0 auto;
         padding:30px;
-    }
-  
-    .form_wrap p {
+      }
+      
+      .form_wrap p {
         margin-bottom: 0px;
-    }
-  
-    .form_p h3 {
+      }
+      
+      .form_p h3 {
         font-size: 18px;
         width: 70%;
         padding: 20px 30px;
+      }
+    
+      .form_p_pc {
+          display: none;
+      }
+    
+      .form_p .form_p_sp {
+          display: block;
+          font-size: 16px;
+      }
+      
+      .form_lead .form_lead_pc {
+        display: none;
     }
-  
-    .form_p p {
-        font-size: 11px;
-    }
-  
-    .form_lead {
+    
+      .form_lead .form_lead_sp {
+        display: block;
         margin-top: 50px;
-    }
-  
-    .form_lead p {
-        font-size: 11px;
-    }
-  
-    .Form-Item {
+        font-size: 16px;
+      }
+      
+      
+      .Form-Item {
         padding-left: 14px;
         padding-right: 14px;
         padding-top: 16px;
         padding-bottom: 16px;
         flex-wrap: wrap;
-    }
-  
-    .Form-Item p {
-        font-size: 15px;
-    }
-  
-    .Form-Item-Label {
+      }
+      
+      .Form-Item p {
+        font-size: 16px;
+      }
+      
+      .Form-Item-Label {
         max-width: inherit;
         display: flex;
         align-items: center;
         font-size: 5px;
-    }
-  
-    .Form-Item-Label.isMsg {
+      }
+      
+      .Form-Item-Label.isMsg {
         margin-top: 0;
-    }
-  
-    .Form-Item-Label-Required {
-        font-size: 10px;
-    }
-  
-    .Form-Item-Input {
+      }
+      
+      .Form-Item-Label-Required {
+        font-size: 16px;
+      }
+      
+      .Form-Item-Input {
         margin-left: 0;
         margin-top: 18px;
         height: 40px;
         flex: inherit;
         font-size: 15px;
         width: 80%;
-    }
-  
-    .Form-Item-Textarea {
+      }
+      
+      .Form-Item-Textarea {
         margin-top: 18px;
         margin-left: 0;
         height: 200px;
         flex: inherit;
         font-size: 15px;
         width: 80%;
-    }
-  
-    .submit {
+      }
+      
+      .submit {
         margin-top: 24px;
         padding-top: 8px;
         padding-bottom: 8px;
         width: 160px;
         font-size: 16px;
-    }
+      }
+      
+        
+        /* footer */
+        .footer_wrap {
+            width: auto;
+            padding: 0 10px;
+            margin: 0 auto;
+        }
     
-    /* footer */
-    .footer_wrap {
-        width: auto;
-        padding: 0 10px;
-        margin: 0 auto;
-    }
-
-    .footer_nav li {
-        font-size: 13px;
-        padding-bottom: 20px;
-    }
-  
-    .footer_wrap hr {
-        margin-bottom: 20px;
-    }
-    
-    .toTop {
-        width: 15%;
-        margin: 50px auto 30px;
-    }
-  
-    .copy {
-        align-items: center;
-    }
-  
-    small {
-        font-size: 10px;
-        align-items: center;
-    }
+        .footer_nav li {
+            font-size: 13px;
+            padding-bottom: 20px;
+        }
+      
+        .footer_wrap hr {
+            margin-bottom: 20px;
+        }
+        
+        .toTop {
+            width: 15%;
+            margin: 50px auto 30px;
+        }
+      
+        .copy {
+            align-items: center;
+        }
+      
+        small {
+            font-size: 12px;
+            align-items: center;
+        }
 }

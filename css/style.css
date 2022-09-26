@@ -344,6 +344,10 @@ body {
     text-align: center;
 } 
 
+.form_p .form_p_sp {
+  display: none;
+}
+
 .form_p h3:hover {
     background-color: #4D4D4D;
     color: #fff;
@@ -360,6 +364,14 @@ body {
 
 .form_lead p {
     text-align: center;
+}
+
+.form_lead_sp {
+  display: none;
+}
+
+.form_lead span {
+  color: red;
 }
 
 #Form {
@@ -711,16 +723,23 @@ small {
   padding: 20px 30px;
 }
 
-.form_p p {
-  font-size: 11px;
+.form_p_pc {
+  display: none;
 }
 
-.form_lead {
-  margin-top: 50px;
+.form_p .form_p_sp {
+  display: block;
+  font-size: 16px;
 }
 
-.form_lead p {
-  font-size: 11px;
+.form_lead .form_lead_pc {
+display: none;
+}
+
+.form_lead .form_lead_sp {
+display: block;
+margin-top: 50px;
+font-size: 16px;
 }
 
 .Form-Item {
